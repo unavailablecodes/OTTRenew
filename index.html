@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OTT Renew Prototype</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="brand">
+        <span class="orb">OT</span>
+        <div>
+          <div class="eyebrow">Prototype only</div>
+          <h1>OTT Renew</h1>
+        </div>
+      </div>
+      <p class="lede">
+        A lightweight, shareable feedback prototype. No login backend, no sync, no TestFlight.
+      </p>
+
+      <div class="chips">
+        <span>Renewals-first</span>
+        <span>India pricing</span>
+        <span>Feedback ready</span>
+      </div>
+    </section>
+
+    <nav class="steps" aria-label="Prototype steps">
+      <button class="step active" data-view="intro">1. Intro</button>
+      <button class="step" data-view="login">2. Login</button>
+      <button class="step" data-view="home">3. Home</button>
+      <button class="step" data-view="analytics">4. Analytics</button>
+      <button class="step" data-view="profile">5. Profile</button>
+      <button class="step" data-view="feedback">6. Feedback</button>
+    </nav>
+
+    <section class="screen active" id="intro">
+      <div class="card glass">
+        <p class="label">What this is</p>
+        <h2>A simple flow to review the product shape.</h2>
+        <p>
+          Use this to get reactions on the concept, visuals, wording, and overall structure.
+          It is intentionally not connected to Firebase or the App Store.
+        </p>
+      </div>
+      <div class="grid two">
+        <article class="card preview dark">
+          <p class="label">Focus</p>
+          <h3>Renewals, not clutter.</h3>
+          <p>OTT plans appear in date order, with paid, free, and bundled plans kept distinct.</p>
+        </article>
+        <article class="card preview dark">
+          <p class="label">Use case</p>
+          <h3>Show it to friends.</h3>
+          <p>Open this file in a browser, or host it for a shareable link later.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen" id="login">
+      <div class="phone-card">
+        <div class="hero-panel">
+          <div class="hero-copy">
+            <p class="kicker">Sign in</p>
+            <h2>Sign in to make OTT Renew personal.</h2>
+            <p>Use your email or phone number so renewals and reminders feel tied to you.</p>
+          </div>
+          <div class="badge-row">
+            <span>Local profile</span>
+            <span>Renewal sync</span>
+            <span>Elegant login</span>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div class="segment">
+            <button class="pill active">Email</button>
+            <button class="pill">Phone</button>
+          </div>
+
+          <label class="field">
+            <span>Email or phone</span>
+            <input type="text" placeholder="deepa@example.com or 9899000321" />
+          </label>
+
+          <label class="field">
+            <span>Password / OTP</span>
+            <input type="text" placeholder="••••••" />
+          </label>
+
+          <button class="cta">Send code</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="home">
+      <div class="card glass hero-home">
+        <div>
+          <p class="label">Personalized for Deepa</p>
+          <h2>Track every OTT renewal.</h2>
+          <p>Keep a calm, automatic reminder before each renewal date.</p>
+        </div>
+        <div class="status-pill">Next due in 31 days</div>
+      </div>
+
+      <div class="grid two">
+        <article class="card dark">
+          <p class="label">Upcoming</p>
+          <h3>Netflix</h3>
+          <p>Monthly · Direct · In 31 days</p>
+        </article>
+        <article class="card dark">
+          <p class="label">Soon</p>
+          <h3>Prime Video</h3>
+          <p>Annual · Bundled · In 15 days</p>
+        </article>
+      </div>
+
+      <div class="card light">
+        <div class="row">
+          <div>
+            <p class="label">Controls</p>
+            <h3>One clean add path.</h3>
+          </div>
+          <button class="mini">Add OTT</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="analytics">
+      <div class="card glass">
+        <p class="label">Spend details</p>
+        <h2>Simple charts and savings insight.</h2>
+        <p>Paid, free, and bundled plans stay visually distinct.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card dark">
+          <p class="label">Plan mix</p>
+          <div class="bars">
+            <div><span style="width: 64%"></span><label>Paid</label></div>
+            <div><span style="width: 18%"></span><label>Free</label></div>
+            <div><span style="width: 38%"></span><label>Bundled</label></div>
+          </div>
+        </article>
+        <article class="card dark">
+          <p class="label">Savings</p>
+          <h3>Track what can be paused.</h3>
+          <p>Mark free or bundled plans so the app only reminds when needed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen" id="profile">
+      <div class="card glass">
+        <p class="label">Profile</p>
+        <h2>Account details in one clean place.</h2>
+        <p>Let the hero stay minimal while the user manages their signed-in identity here.</p>
+      </div>
+      <div class="grid two">
+        <article class="card dark">
+          <p class="label">Signed in from</p>
+          <h3>Phone</h3>
+          <p>+91 98990 00321</p>
+        </article>
+        <article class="card dark">
+          <p class="label">Display name</p>
+          <h3>Deepa</h3>
+          <p>Editable from this screen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="screen" id="feedback">
+      <div class="card glass">
+        <p class="label">Feedback</p>
+        <h2>Send quick notes without any backend.</h2>
+        <p>This is just a prototype, so feedback is copied or emailed from the browser.</p>
+      </div>
+
+      <div class="card form-card">
+        <label class="field">
+          <span>What worked?</span>
+          <textarea rows="3" placeholder="What felt strong or polished?"></textarea>
+        </label>
+        <label class="field">
+          <span>What felt unclear?</span>
+          <textarea rows="3" placeholder="Any confusion or friction?"></textarea>
+        </label>
+        <label class="field">
+          <span>What should change?</span>
+          <textarea rows="3" placeholder="Ideas for the next pass."></textarea>
+        </label>
+        <div class="actions">
+          <button class="cta ghost" id="copyFeedback">Copy feedback prompt</button>
+          <a class="cta" id="mailFeedback" href="mailto:?subject=OTT%20Renew%20Prototype%20Feedback&body=I%20reviewed%20the%20OTT%20Renew%20prototype%20and%20wanted%20to%20share%20feedback.">Open email</a>
+        </div>
+        <p class="footnote" id="copyStatus">No login, no backend. Just a fast feedback loop.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./prototype.js"></script>
+</body>
+</html>
