@@ -81,11 +81,24 @@ h3 { font-size: 1.12rem; letter-spacing: -0.03em; }
   line-height: 1.6;
 }
 
+.byline {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
 .chips, .badge-row {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 14px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
 }
 
 .chips span, .badge-row span, .status-pill {
@@ -147,6 +160,25 @@ h3 { font-size: 1.12rem; letter-spacing: -0.03em; }
 .card {
   padding: 22px;
   border: 1px solid var(--stroke);
+}
+
+.checklist {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(19, 19, 19, 0.08);
+}
+
+.checklist ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.checklist li + li {
+  margin-top: 6px;
 }
 
 .glass {
@@ -306,4 +338,6 @@ h3 { font-size: 1.12rem; letter-spacing: -0.03em; }
   .grid.two, .hero-home, .row { grid-template-columns: 1fr; display: grid; }
   .hero { padding: 22px; }
   .card { padding: 18px; }
+  .hero-actions, .actions { align-items: stretch; }
+  .hero-actions .cta, .hero-actions .ghost, .actions .cta { width: 100%; }
 }
